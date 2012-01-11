@@ -8,6 +8,7 @@
   <packaging>jar</packaging>
 
   <name>jiraclient</name>
+  <description>Cliente REST para el gestor de incidencias JIRA.</description>
   <url>http://maven.apache.org</url>
 
   <properties>
