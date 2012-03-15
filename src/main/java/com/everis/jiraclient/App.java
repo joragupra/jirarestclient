@@ -44,6 +44,7 @@ public class App
     	Client c = Client.create(config);
     	WebResource res = c.resource("http://217.124.190.3/jira/rest/api/2.0.alpha1/project");
     	String proyectos = res.cookie(cookie).get(String.class);
+    	System.out.println("Proyectos:\n" + proyectos);
     	res = c.resource("http://217.124.190.3/jira/rest/api/2.0.alpha1/project/AFIRMA");
     	String proyecto = res.cookie(cookie).get(String.class);
     	System.out.println("Proyecto:\n" + proyecto);
